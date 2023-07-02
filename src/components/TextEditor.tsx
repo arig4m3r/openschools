@@ -10,15 +10,21 @@ const ReactQuill = dynamic(
   { ssr: false }
 );
 
-export function TextEditor() {
-  const [value, setValue] = useState("");
-
+export function TextEditor({
+  onChange,
+  value,
+}: {
+  onChange: (value: string) => void;
+  value: string;
+}) {
   return (
-    <ReactQuill
-      theme="snow"
-      value={value}
-      onChange={setValue}
-      className="rounded-full"
-    />
+    <div className="w-full min-h-[5.5rem]">
+      <ReactQuill
+        theme="snow"
+        value={value}
+        onChange={onChange}
+        className="rounded-full"
+      />
+    </div>
   );
 }

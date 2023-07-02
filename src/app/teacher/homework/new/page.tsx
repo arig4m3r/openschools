@@ -1,4 +1,4 @@
-import { NewHomeworkCard } from "@/components/NewHomeworkCard";
+import NewHomeworkCard from "@/components/NewHomeworkCard";
 import { TextEditor } from "@/components/TextEditor";
 import { Homework } from "@prisma/client";
 import React from "react";
