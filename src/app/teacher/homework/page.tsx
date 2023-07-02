@@ -21,7 +21,9 @@ export default async function page({}: Props) {
 
   return (
     <div>
-      <h1 className="text-center text-2xl py-4 font-semibold">Seus alunos</h1>
+      <h1 className="text-center text-2xl py-4 font-semibold">
+        Suas atividades
+      </h1>
       <div className="flex justify-center">
         <div className="w-8/12">
           <HomeworksTable data={data} />

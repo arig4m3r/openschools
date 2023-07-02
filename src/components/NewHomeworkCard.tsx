@@ -114,7 +114,7 @@ export default function NewHomeworkCard() {
                 name="classroom"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Classe</FormLabel>
+                    <FormLabel>Turma</FormLabel>
                     <FormControl>
                       <Select
                         onValueChange={field.onChange}
@@ -136,7 +136,7 @@ export default function NewHomeworkCard() {
                 )}
               />
             </div>
-            <CardFooter className="flex justify-between py-2 px-0">
+            <CardFooter className="flex justify-between pt-6 pb-0 px-0">
               <Link href={"/teacher/homework"}>
                 <Button variant="outline">Cancelar</Button>
               </Link>
