@@ -1,10 +1,13 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 
 export const metadata = {
   title: "OpenSchools",
   description: "Sua escola agora mais conectada",
 };
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -13,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={inter.className}>
         <Providers>{children}</Providers>
       </body>
     </html>
